@@ -45,7 +45,7 @@ func main() {
 	}
 	q.AddURL("http://taohuazu7.com")
 
-	for true {
+	for !q.IsEmpty() {
 		q.Run(c)
 		c.Wait()
 	}
